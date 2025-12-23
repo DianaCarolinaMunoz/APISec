@@ -1,12 +1,14 @@
 import streamlit as st
 from utils.data_loader import get_data
 
-df = get_data()
+data = get_data()
+
+df_deprecated = data["deprecated"]
+df_total = data["total"]
 
 st.header("Global")
-col1, col2, col3 = st.columns(3)
-col1.metric("Total deprecated dependenceis", f"{df['dep_count'].sum():,}")
-# col2.metric("Total APIs Analized", df['api_spec_id'].nunique())
-col3.metric("Ecosystems", df['language'].nunique())
+col1, col2 = st.columns(2)
+col1.metric("Total dependenceis", f"{df_total['dep_count'].sum():,}")
+col2.metric("Ecosystems", df_total['language'].nunique())
 
-st.bar_chart(df.groupby('language')['dep_count'].sum())
+st.bar_chart(df_total.groupby('language')['dep_count'].sum())
