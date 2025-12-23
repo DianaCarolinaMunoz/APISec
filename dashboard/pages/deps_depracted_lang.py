@@ -17,8 +17,11 @@ group_by = st.radio(
     horizontal=True
 )
 
-fig = plot_by_language(df_deprecated, lenguaje, group_by=group_by)
-st.plotly_chart(fig, use_container_width=True)
+fig_count = plot_by_language(df_deprecated, lenguaje, group_by=group_by, mode="count")
+st.plotly_chart(fig_count, use_container_width=True)
+
+fig_percent = plot_by_language(df_deprecated, lenguaje, group_by=group_by, mode="percent")
+st.plotly_chart(fig_percent, use_container_width=True)
 
 total = df_deprecated[df_deprecated['language'] == lenguaje]['dep_count'].sum()
 st.metric(f"Total deprecated dependencies {lenguaje}", f"{total:,}")
