@@ -2,7 +2,7 @@ import plotly.graph_objects as go
 import pandas as pd
 import streamlit as st
 
-def plot_by_language(df, language, group_by="year", mode="count", height=None):
+def plot_by_language(df, language, group_by="year", mode=None, height=None):
     
     df_lang = df[df['language'] == language].copy()
     
