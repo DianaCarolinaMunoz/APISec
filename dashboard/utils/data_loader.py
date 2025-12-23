@@ -14,10 +14,10 @@ def load_data():
     csv_total = os.path.join(project_root, "data", "total_deps_per_api_lang_classification.csv")
 
     
-    st.write("Ruta deprecated:", csv_deprecated)
-    st.write("Existe:", os.path.exists(csv_deprecated))
-    st.write("Ruta total:", csv_total)
-    st.write("Existe:", os.path.exists(csv_total))
+    # st.write("Ruta deprecated:", csv_deprecated)
+    # st.write("Existe:", os.path.exists(csv_deprecated))
+    # st.write("Ruta total:", csv_total)
+    # st.write("Existe:", os.path.exists(csv_total))
 
    
     missing_files = []
