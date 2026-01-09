@@ -11,6 +11,8 @@ def load_data():
 
     #paths to data
     csv_deprecated = os.path.join(project_root, "data", "deprecated_deps_per_api_lang_classification.csv")
+    csv_gone = os.path.join(project_root, "data", "gone_deps_per_api_lang_classification.csv")
+    csv_vulnerable = os.path.join(project_root, "data", "vuln_deps_per_api_lang_classification.csv")
     csv_total = os.path.join(project_root, "data", "total_deps_per_api_lang_classification.csv")
 
     
@@ -34,18 +36,16 @@ def load_data():
 
     # load data
     df_deprecated = pd.read_csv(csv_deprecated)
+    df_gone = pd.read_csv(csv_gone)
+    df_vulnerable = pd.read_csv(csv_vulnerable)
     df_total = pd.read_csv(csv_total)
 
-    # date processing 
-    # for df in [df_deprecated, df_total]:
-    #     if 'commit_date_norm' in df.columns:
-    #         df['commit_date'] = pd.to_datetime(df.columns['commit_date_norm']).dt.date
-    #     elif 'commit_date' in df.columns:
-    #         df['commit_date'] = pd.to_datetime(df['commit_date']).dt.date
-
+  
  
     return {
         "deprecated": df_deprecated,
+        "gone": df_gone,
+        "vulnerable": df_vulnerable,
         "total": df_total
     }
 
