@@ -85,8 +85,8 @@ def plot_by_language(df, language, group_by="year", mode=None, height=None):
             marker_color=colors[classification]
         ))
 
-    # Altura por defecto según modo
-    default_height = 400 if mode == "percent" else 600  # porcentaje más alto para ver mejor las etiquetas
+    
+    default_height = 400 if mode == "percent" else 600  
     fig_height = height if height is not None else default_height
     
   
