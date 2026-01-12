@@ -47,8 +47,8 @@ def load_data():
 
 
     
-    with open(json_api_lag, 'r', encoding='utf-8') as f:
-        df_lag_json = json.load(f)
+    # with open(json_api_lag, 'r', encoding='utf-8') as f:
+    #     df_lag_json = json.load(f)
 
   
  
@@ -58,7 +58,7 @@ def load_data():
         "vulnerable": df_vulnerable,
         "total": df_total,
         "lag_csv": df_lag_csv,
-        "lag_json": df_lag_json
+        # "lag_json": df_lag_json
     }
 
 def get_data():
