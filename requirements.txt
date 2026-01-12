@@ -2,3 +2,5 @@ streamlit
 pandas
 plotly
 pyvis
+matplotlib
+seaborn  
