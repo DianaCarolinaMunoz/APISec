@@ -16,8 +16,8 @@ def load_data():
     csv_vulnerable = os.path.join(project_root, "data", "vuln_deps_per_api_lang_classification.csv")
     csv_total = os.path.join(project_root, "data", "total_deps_per_api_lang_classification.csv")
     csv_lag = os.path.join(project_root, "data", "apis_adoption_lag.csv")
-    json_api_lag = os.path.join(project_root, "data", "github_commits_openapi_study_lag.json")
-
+    csv_sec = os.path.join(project_root, "data", "auth_schemes_evolution.csv")
+                                                                                                                                                                
     
     # st.write("Ruta deprecated:", csv_deprecated)
     # st.write("Existe:", os.path.exists(csv_deprecated))
@@ -44,7 +44,8 @@ def load_data():
     df_total = pd.read_csv(csv_total)
     df_lag_csv = pd.read_csv(csv_lag)
     # df_lag_json = pd.read_json(json_api_lag)
-
+    df_sec = pd.read_csv(csv_sec)
+    
 
     
     # with open(json_api_lag, 'r', encoding='utf-8') as f:
@@ -59,6 +60,7 @@ def load_data():
         "total": df_total,
         "lag_csv": df_lag_csv,
         # "lag_json": df_lag_json
+        "sec": df_sec
     }
 
 def get_data():

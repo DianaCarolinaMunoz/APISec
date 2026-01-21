@@ -11,4 +11,6 @@ col1, col2 = st.columns(2)
 col1.metric("Total dependenceis", f"{df_total['dep_count'].sum():,}")
 col2.metric("Ecosystems", df_total['language'].nunique())
 
+is_clicked = st.button("click")
+
 st.bar_chart(df_total.groupby('language')['dep_count'].sum())
