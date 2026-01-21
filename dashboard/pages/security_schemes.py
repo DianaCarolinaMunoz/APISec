@@ -8,17 +8,15 @@ st.title("OpenAPI Security Schemes Evolution")
 # st.markdown("""((""")
 
 data = get_data()
-st.write("Claves disponibles en data:", list(data.keys()))
-
+# st.write("keys:", list(data.keys()))
 
 if "sec" not in data:
-    st.error("¡'sec' NO está en el diccionario devuelto por get_data()!")
+    st.error("Not data found security schemes.")
     st.stop()
 
 df_sec = data["sec"]
 
-data = get_data()
-df_sec = data["sec"]
+
 
 
 languages_available = sorted(df_sec['language'].unique())
