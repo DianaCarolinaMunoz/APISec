@@ -17,6 +17,7 @@ def load_data():
     csv_total = os.path.join(project_root, "data", "total_deps_per_api_lang_classification.csv")
     csv_lag = os.path.join(project_root, "data", "apis_adoption_lag.csv")
     csv_sec = os.path.join(project_root, "data", "auth_schemes_evolution.csv")
+    csv_auth = os.path.join(project_root, "data", "auth_schemes_evolution_clean.csv")
                                                                                                                                                                 
     
     # st.write("Ruta deprecated:", csv_deprecated)
@@ -45,6 +46,7 @@ def load_data():
     df_lag_csv = pd.read_csv(csv_lag)
     # df_lag_json = pd.read_json(json_api_lag)
     df_sec = pd.read_csv(csv_sec)
+    df_auth = pd.read_csv(csv_auth)
     
 
     
@@ -60,7 +62,8 @@ def load_data():
         "total": df_total,
         "lag_csv": df_lag_csv,
         # "lag_json": df_lag_json
-        "sec": df_sec
+        "sec": df_sec,
+        "auth_by_class": df_auth
     }
 
 def get_data():

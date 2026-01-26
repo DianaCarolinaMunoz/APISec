@@ -1,0 +1,49 @@
+year,language,classification,auth_group,scheme_count,year_str
+2016,ruby,Only SecDef,apikey,44,2016
+2019,go,Only SecDef,basic,20,2019
+2019,java,Both,apikey,50,2019
+2019,java,Both,oauth2,50,2019
+2019,java,Only SecSchemes,apikey,17,2019
+2019,java,Only SecSchemes,oauth2,14,2019
+2019,python,Only SecSchemes,http_basic,11,2019
+2019,python,Only SecSchemes,http_bearer,11,2019
+2020,go,Only SecSchemes,apikey,2,2020
+2020,go,Only SecSchemes,oauth2,2,2020
+2020,java,Both,apikey,90,2020
+2020,java,Both,oauth2,90,2020
+2020,java,Only SecSchemes,apikey,14,2020
+2020,java,Only SecSchemes,oauth2,13,2020
+2021,java,Only SecDef,basic,1,2021
+2021,java,Only SecSchemes,apikey,3,2021
+2021,java,Only SecSchemes,oauth2,2,2021
+2021,javascript,Only SecSchemes,apikey,3,2021
+2021,javascript,Only SecSchemes,oauth2,3,2021
+2022,go,Only SecSchemes,http_bearer,19,2022
+2022,java,Only SecSchemes,apikey,7,2022
+2022,java,Only SecSchemes,oauth2,7,2022
+2023,java,Only SecSchemes,apikey,3,2023
+2023,java,Only SecSchemes,oauth2,3,2023
+2023,javascript,Only SecSchemes,apikey,42,2023
+2023,javascript,Only SecSchemes,oauth2,42,2023
+2023,python,Only SecSchemes,apikey,117,2023
+2023,python,Only SecSchemes,http_other,18,2023
+2023,ruby,Only SecDef,apikey,122,2023
+2024,go,Only SecDef,apikey,6,2024
+2024,java,Only SecSchemes,apikey,11,2024
+2024,java,Only SecSchemes,oauth2,11,2024
+2024,javascript,Only SecSchemes,apikey,8,2024
+2024,javascript,Only SecSchemes,oauth2,8,2024
+2024,python,Only SecSchemes,apikey,286,2024
+2024,python,Only SecSchemes,http_other,44,2024
+2024,ruby,Only SecDef,apikey,192,2024
+2025,go,Only SecDef,apikey,94,2025
+2025,go,Only SecSchemes,oauth2,50,2025
+2025,java,Both,apikey,99,2025
+2025,java,Both,oauth2,148,2025
+2025,java,Only SecSchemes,apikey,69,2025
+2025,java,Only SecSchemes,oauth2,70,2025
+2025,javascript,Only SecSchemes,apikey,8,2025
+2025,python,Only SecSchemes,apikey,195,2025
+2025,python,Only SecSchemes,http_other,30,2025
+2025,ruby,Only SecDef,apikey,86,2025
+2025,ruby,Only SecSchemes,apikey,158,2025
